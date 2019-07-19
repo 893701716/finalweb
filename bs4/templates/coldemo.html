@@ -1,0 +1,376 @@
+{% extends 'bs4/newbase.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12 cols</title>
+    <style>
+    </style>
+</head>
+<body>
+{% block content %}
+    <link rel="stylesheet" href="{% static 'bs4/css/colstyles.css' %}">
+ <nav class="navbar navbar-expand-sm navbar-dark bg-success ">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a href="{% url 'mainpage' %}" class="nav-link">主页</a></li>
+        <li class="nav-item" ><a href="{% url 'menu' %}" class="nav-link">菜单</a></li>
+        <li class="nav-item"><a href="{% url 'more' %}" class="nav-link">更多</a></li>
+{#        <li class="nav-item"><a href="{% url 'aboutus' %}" class="nav-link">关于</a></li>#}
+{#        <li class="nav-item"><a href="#" class="nav-link">建议</a></li>#}
+    </ul></div>
+        </div>
+    </nav>
+   <div class="container">
+    <div class="row">
+    <div class="col-12">
+        <h3 class="">Something I want to say!</h3>
+        <h4 class="d-none d-sm-block">This is my first page of bootstrap!</h4>
+    </div>
+    </div>
+   </div>
+    <div class="container">
+    <div class="row">
+        <div class="col">
+            1 in 2
+        </div>
+        <div class="col">
+            2 in 2
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 in 3
+        </div>
+         <div class="col">
+            2 in 3
+        </div> <div class="col">
+            3 in 3
+        </div>
+    </div>
+    </div>
+    <div class="container">
+            <div class="row">
+                <div class="col">Column</div>
+                 <div class="col">Column</div>
+                <div class="w-100"></div>
+                 <div class="col">Column</div>
+                 <div class="col">Column</div>
+            </div>
+        </div>
+  <div class="container">
+  <div class="row">
+    <div class="col col-sm-8">col-sm-8</div>
+    <div class="col col-sm-4">col-sm-4</div>
+  </div>
+  <div class="row">
+    <div class="col col-sm">col-sm</div>
+    <div class="col col-sm">col-sm</div>
+    <div class="col col-sm">col-sm</div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+  <div class="row">
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+
+  <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="row">
+    <div class="col-6">.col-6</div>
+    <div class="col-6">.col-6</div>
+  </div>
+  <div class="container px-lg-5">
+  <div class="row mx-lg-n5">
+    <div class="col py-3 px-lg-5 border bg-light">Custom column padding</div>
+    <div class="col py-3 px-lg-5 border bg-light">Custom column padding</div>
+  </div>
+</div>
+  <div class="container">
+  <div class="row">
+    <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+    <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+
+    <!-- Force next columns to break to new line at md breakpoint and up -->
+    <div class="w-100 d-none d-md-block"></div>
+
+    <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+    <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+  </div>
+</div>
+  <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+          Dropdown
+          <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a href="#" role="menuitem" tabindex="-1">Action</a></li>
+          <li role="presentation"><a href="#" role="menuitem" tabindex="-1">Another action</a></li>
+      </ul>
+  </div>
+</div>
+    <h1>这是主标题<small>这是bootstrap增加的副标题标签</small></h1>
+    add the class lead then make the p element distinguished.
+    <p class="lead">It's wednesday,raining heavily now</p>
+    use the mark tag to highlight the text.such as:
+    <p>I just wang to <mark>run!</mark></p>
+    use the 'del' tag for deleted text.such as:<br>
+    <del>This line of text meant to be treatex as deleted text!</del>
+    <ul class="list-inline">
+    <li>Lorem ipsum Phasellus iaculis Nulla volutpat</li>
+    </ul>
+    <dl class="dl-horizontal">
+    <dt>第一节</dt>
+    <dd>打太极，吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜吃咸菜</dd>
+    <dt>第二节</dt>
+    <dd>看日落，喝酸奶</dd>
+    </dl>
+    <div class="table-responsive">
+    <table class="table table-bordered table-hover">
+    <tr>
+        <td>企业</td><td>部门</td><td>人数</td>
+    </tr>
+    <tr class="success">
+        <td>华为</td>
+        <td>销售部</td>
+        <td>50</td>
+    </tr>
+    <tr class="warning">
+        <td>小米</td>
+        <td>销售部</td>
+        <td>50</td>
+    </tr>
+    </table>
+    </div>
+    <form action="">
+    <div class="form-group">
+        <div class="row">
+        <label for="name" class="col-form-label col-md-1">姓名</label>
+        <input type="text" class="form-control col-md" id="name" placeholder="请输入你的姓名">
+     </div>
+        <div class="row">
+            <label for="gender" class="col-form-label col-md-1">性别</label>
+        <input type="text" class="form-control col-md-2" id="gender" placeholder="请输入你的姓名">
+        </div>
+    </div>
+
+    </form>
+    <select name="" id="" class="form-control">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+    </select>
+    <form action="">
+    <fieldset disabled>
+        <div class="form-group">
+            <label for="disabledTextInput" class="">Disabled input</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Distabled input">
+        </div>
+        <div class="form-group">
+            <label for="disabledSelect"> Disabled Seclect Menu   </label>
+                <select name="" id="disabledSelect" class="form-control">
+                    <option value="">Disabled option</option>
+                </select>
+        </div>
+    </fieldset>
+    </form>
+    <div class="img-responsive">
+        <img src="{% static 'bs4/img/1.jpg' %}" alt="" class="img-responsive img-circle">
+    </div>
+<div class="card">
+<div class="card-header bg-warning text-white">
+    <h3 >This is the head of the card!</h3>
+</div>
+<div class="card-body">
+    <form action="#">
+        <div class="form-group row">
+            <div class="col-form-label col-12 col-md-2">Number of guests</div>
+            <div class="col-12 col-md-10">
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="i1" id="i1">
+                    <label for="i1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="i1" id="i2">
+                    <label for="i2">2</label>
+                </div>
+                <div class="form-check form-check-inline" name="i1" id="i2">
+                    <input type="radio" class="form-check-input" name="i1" id="i3">
+                    <label for="i2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="i1" id="i4">
+                     <label for="i2">4</label>
+                </div>
+                 <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="i1" id="i5">
+                      <label for="i2">5</label>
+                </div>
+                 <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="i1" id="i6">
+                      <label for="i2">6</label>
+                </div>
+
+
+            </div>
+        </div>
+            <div class="form-group row">
+                   <label for="Date" class="col-12 col-md-2">Date and Time</label>
+                   <div class="col-12 col-md-4">
+                       <input type="date"class="form-control" id="Date" name="date">
+                   </div>
+                    <div class="col-12 col-md">
+                       <input type="time" class="form-control" id="Time" name="time">
+                   </div>
+               </div>
+                 <div class="form-group row">
+                     <div class="col-12 col-md-2"><button class="btn btn-info">Reserve</button></div>
+                 </div>
+    </form>
+</div>
+    <h1>下面是nav-tab样式的导航栏</h1>
+</div>
+    <ul class="nav nav-tabs">
+    <li class="nav-item" ><a href="#Lesile" class="nav-link" data-toggle="tab">Lesile</a></li>
+    <li class="nav-item" ><a href="#Chowrunfa" class="nav-link" data-toggle="tab">Chow run fa</a></li>
+    <li class="nav-item" ><a href="#Chowjery" class="nav-link" data-toggle="tab">Jery Chow</a></li>
+    </ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="Lesile" role="tabpanel">
+    <h3>张国荣</h3>
+    <p class="d-none d-md-block">　张国荣，籍贯广东梅县，生于香港，是一位在全球华人社会和亚洲地区有影响力的著名演员、歌手和音乐人，大中华地区乐坛和影坛巨星，演艺圈多面发展最成功的代表之一。他是1980年代华语乐坛的殿堂级歌手之一；1991年获香港电影金像奖最佳男主角；1994年凭《霸王别姬》获日本影评人协会最佳外语片男主角，并打破大陆文艺片在美国的票房纪录，成功晋身国际影坛；1999年获香港乐坛最高荣誉“金针奖”。他主演的电影名作有《胭脂扣》、《倩女幽魂》、《阿飞正传》、《霸王别姬》、《东邪西毒》、《春光乍泄》等。</p>
+</div>
+<div class="tab-pane " id="Chowrunfa" role="tabpanel" role="tabpanel">
+    <h3>周润发</h3>
+    <p class="d-none d-md-block">周润发（Chow Yun Fat，1955年5月18日-），出生于中国香港南丫岛，毕业于香港廖创兴中学，中国香港男演员，国家一级演员。[1]1976年，初涉影坛。1980年，主演电视连续剧《上海滩》被人熟知。1984年，凭借《等待黎明》，获得亚太影展和台湾金马奖最佳男主角。1987年，凭借《英雄本色》，获得香港电影金像奖最佳男主角。2000年，获法国杜维尔电影节特别成就奖。2007年获美国AZN电视台 “亚洲卓越奖颁奖礼”终身成就奖</p>
+</div>
+<div class="tab-pane" id="Chowjery" role="tabpanel" role="tabpanel">
+    <h3>周杰伦</h3>
+    <p class="d-none d-md-block">
+        周杰伦（Jay Chou，1979年1月18日-），出生于中国台湾新北市，毕业于淡江音乐学院，中国台湾男歌手、演员、导演。2000年被吴宗宪发掘并推出首张专辑《Jay》。2005年涉足影视，以电影《头文字D》获第42届台湾电影金马奖及第25届香港电影金像奖“最佳新人”奖。2007年，自编自导自演的电影《不能说的秘密》获得台湾电影金马奖年度台湾杰出电影奖。2011年凭借专辑《跨时代》获得金曲奖最佳国语男歌手奖，并且第4次获得金曲奖最佳国语专辑奖。
+    </p>
+</div>
+    <h1>下面是nav-pills的导航栏例子</h1>
+
+<h1>下面是口风琴的例子</h1>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#lesile" class="nav-link">张国荣</a>
+        </li>
+        <li class="nav-item">
+            <a href="#chourunfat" class="nav-link">周润发</a>
+        </li>
+        <li class="nav-item">
+            <a href="#choujay" class="nav-link">周杰伦</a>
+        </li>
+    </ul>
+<div class="accordion" id="accordion">
+    <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#lesile">
+            <button class="btn btn-link" data-toggle="collapse">张国荣</button>
+        </div>
+        <div id="lesile" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+                <p>　张国荣，籍贯广东梅县，生于香港，是一位在全球华人社会和亚洲地区有影响力的著名演员、歌手和音乐人，大中华地区乐坛和影坛巨星，演艺圈多面发展最成功的代表之一。他是1980年代华语乐坛的殿堂级歌手之一；1991年获香港电影金像奖最佳男主角；1994年凭《霸王别姬》获日本影评人协会最佳外语片男主角，并打破大陆文艺片在美国的票房纪录，成功晋身国际影坛；1999年获香港乐坛最高荣誉“金针奖”。他主演的电影名作有《胭脂扣》、《倩女幽魂》、《阿飞正传》、《霸王别姬》、《东邪西毒》、《春光乍泄》等。</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#chourunfat">
+            <button class="btn btn-link" data-toggle="collapse">周润发</button>
+        </div>
+        <div id="chourunfat" class="collapse" data-parent="#accordion">
+           <div class="card-body">
+                <p class="">周润发（Chow Yun Fat，1955年5月18日-），出生于中国香港南丫岛，毕业于香港廖创兴中学，中国香港男演员，国家一级演员。[1]1976年，初涉影坛。1980年，主演电视连续剧《上海滩》被人熟知。1984年，凭借《等待黎明》，获得亚太影展和台湾金马奖最佳男主角。1987年，凭借《英雄本色》，获得香港电影金像奖最佳男主角。2000年，获法国杜维尔电影节特别成就奖。2007年获美国AZN电视台 “亚洲卓越奖颁奖礼”终身成就奖</p>
+           </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" data-toggle="collapse" data-target="#chowjay">
+            <button class="btn btn-link" data-toggle="collapse">周杰伦</button>
+        </div>
+        <div id="chowjay" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                周杰伦（Jay Chou，1979年1月18日-），出生于中国台湾新北市，毕业于淡江音乐学院，中国台湾男歌手、演员、导演。2000年被吴宗宪发掘并推出首张专辑《Jay》。2005年涉足影视，以电影《头文字D》获第42届台湾电影金马奖及第25届香港电影金像奖“最佳新人”奖。2007年，自编自导自演的电影《不能说的秘密》获得台湾电影金马奖年度台湾杰出电影奖。2011年凭借专辑《跨时代》获得金曲奖最佳国语男歌手奖，并且第4次获得金曲奖最佳国语专辑奖。
+            </div>
+        </div>
+    </div>
+</div>
+<h1>下面写一个模态对话框</h1>
+    <span class="navbar-text"><a data-toggle="modal" data-target="#login-modal">登陆</a></span>
+<div id="login-modal" class="modal fade dialog-xl" role="dialog">
+    <div class="modal-dialog dialog-xl modal-dialog-centered" role="content">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">登陆</div>
+                <button  class="close" type="button" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group col-sm-4">
+                                   <label for="email" class="sr-only">邮箱：</label>
+                             <input id="email" type="email" class="form-control form-control-sm mr-1" placeholder="请输入邮箱">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="password" class="sr-only">密码</label>
+                            <input type="password" class="form-control form-control-sm mr-1" placeholder="请输入密码">
+                        </div>
+                        <div class="col-sm-auto">
+                           <div class="form-check">
+                               <input type="checkbox" class="form-check-input" id="tips">
+                               <label for="#tips" class="form-check-label">Remember me</label>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                 <button class="btn btn-secondary btn-warning btn-sm ml-auto">取消</button>
+                        <button class="btn btn-secondary btn-success btn-sm ml-1">登陆</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+    <h1>再写一个模态对话框</h1>
+    <button class="btn btn-info" type="button" data-toggle="modal" data-target="#login-modal2">登陆</button>
+    <div class="modal fade modal-dialog-lg" id="login-modal2" role="dialog">
+    <div class="modal-dialog" role="content">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">The way to salvation</div>
+                <button class="close" type="button" data-dimiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Salvation lies within</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-success" type="button" data-dismiss="modal">Ok,I got it.</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+
+    </script>
+{% endblock %}
+{% block custom-js %}
+    <script>
+   $("#login-modal").on("shown.bs.modal",function(){
+       $("#email").trigger('focus')
+   })
+    </script>
+{% endblock %}
+</body>
+</html>

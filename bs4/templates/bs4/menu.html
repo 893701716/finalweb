@@ -1,0 +1,29 @@
+{% extends 'bs4/newbase.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>
+            Menu
+</title>
+</head>
+<body>
+{% block content %}
+     <nav class="navbar navbar-expand-sm navbar-dark bg-primary ">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a href="{% url 'mainpage' %}" class="nav-link">主页</a></li>
+        <li class="nav-item active" ><a href="{% url 'menu' %}" class="nav-link">菜单</a></li>
+        <li class="nav-item"><a href="{% url 'more' %}" class="nav-link">更多</a></li>
+    </ul></div>
+        </div>
+    </nav>
+<h1>This is the Menu page!</h1>
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+{% extends 'bs4/newbase.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性导航栏</title>
+</head>
+<body>
+{% block content %}
+    <link rel="stylesheet" href="{% static 'bs4/css/nav.css' %}">
+<nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+    <div class="container" >
+        <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="Navbar" class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a href="#" class="nav-link">
+                第一页
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                第二页
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                第三页
+            </a>
+        </li>
+    </ul>
+            </div>
+    </div>
+</nav>
+    <button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-star"></span>Thumbs up
+    </button>
+{% endblock %}
+</body>
+</html>
